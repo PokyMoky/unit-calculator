@@ -1,0 +1,113 @@
+.au {
+    width: 100px;
+}
+
+.tooltip {
+    position: relative;
+    padding: 3px 0;
+}
+
+.tooltip .tooltipText {
+    box-sizing: border-box;
+    width: 448px;
+    background-color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+    padding: 14px 24px 30px 24px;
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.tooltip h5 {
+    font-size: 20px;
+    color: #424242;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.tooltip p {
+    font-size: 20px;
+    line-height: 30px;
+    white-space: wrap;
+}
+
+.tooltip:hover .tooltipText {
+    display: block;
+    transform: translateX(-50%) translateY(-4px); /* лёгкое "всплытие" вверх */
+}
+
+.tooltip-top .tooltipText {
+    bottom: 50px;
+    left: 210px;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.tooltip-top .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 33px;
+    border-width: 24px 22px 0 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.tooltip-bottom .tooltipText {
+    background-color: white;
+    top: 200%;
+    left: 220px;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 -4px 4px rgba(0, 0, 0, 0.25));
+}
+.tooltip-bottom .tooltipText::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 33px;
+    transform: translateX(-50%);
+    border-width: 0 22px 24px 0;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    filter: drop-shadow(0 -4px -4px rgba(0, 0, 0, 0.25));
+}
+
+.tooltip-right .tooltipText {
+    background-color: white;
+    left: 280px;
+    top: -10%;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.tooltip-right .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 100%;
+    transform: translateY(-50%);
+    border-width: 0 24px 22px 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    filter: drop-shadow(0 -4px -4px rgba(0, 0, 0, 0.25));
+}
+
+.tooltip-left .tooltipText {
+    background-color: white;
+    right: -90px;
+    top: -10px;
+    transform: translateY(-50%);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+.tooltip-left .tooltipText::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: -5%;
+    transform: translateY(-50%);
+    border-width: 0 0 22px 24px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+    filter: drop-shadow(0 -4px -4px rgba(0, 0, 0, 0.25));
+}

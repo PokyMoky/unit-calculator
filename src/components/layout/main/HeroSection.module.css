@@ -1,0 +1,75 @@
+.hero {
+    background-color: #362F81;
+    color: white;
+}
+
+.heroContainer {
+    background-image: url("../../../../public/images/blue_rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 372px 372px;
+    background-position: top -30px right 50%;
+}
+
+.heroHeader {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    margin: 0 auto;
+    padding-top: 248px;
+    max-width: 345px;
+    text-align: center;
+}
+
+.heroParagraph {
+    font-family: "PT Root UI", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 auto;
+    width: 92%;
+    padding: 20px 0 60px 0;
+}
+
+@media (max-width: 299px) {
+    .heroHeader {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .heroContainer {
+        width: 100%;
+        max-width: 1296px;
+        margin: 0 auto;
+        height: 488px;
+        background-size: 585px;
+        background-position: top -50px right 1.5%;
+    }
+
+    .heroHeader {
+        margin: 0 0 0 53px;
+        padding-top: 72px;
+        width: 50%;
+        max-width: 575px;
+        text-align: left;
+        font-size: 64px;
+        line-height: 98%;
+    }
+
+    .heroParagraph {
+        width: 584px;
+        margin: 0 0 0 53px;
+        font-family: "PT Root UI", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .heroContainer {
+        background-position: top -50px right 2%;
+    }
+}
+

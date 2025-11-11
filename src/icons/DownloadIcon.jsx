@@ -1,0 +1,12 @@
+function DownloadIcon(props) {
+   return (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path fillRule="evenodd" clipRule="evenodd" d="M2 17C2 16.4477 2.44772 16 3 16H17C17.5523 16 18 16.4477 18 17C18 17.5523 17.5523 18 17 18H3C2.44772 18 2 17.5523 2 17Z" fill="currentColor"/>
+         <path fillRule="evenodd" clipRule="evenodd" d="M10 2C10.5523 2 11 2.44772 11 3L11 14C11 14.5523 10.5523 15 10 15C9.44772 15 9 14.5523 9 14L9 3C9 2.44772 9.44772 2 10 2Z" fill="currentColor"/>
+         <path fillRule="evenodd" clipRule="evenodd" d="M15.7071 8.29289C16.0976 8.68342 16.0976 9.31658 15.7071 9.70711L10.7071 14.7071C10.3166 15.0976 9.68342 15.0976 9.29289 14.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L10 12.5858L14.2929 8.29289C14.6834 7.90237 15.3166 7.90237 15.7071 8.29289Z" fill="currentColor"/>
+      </svg>
+
+   );
+}
+
+export default DownloadIcon;

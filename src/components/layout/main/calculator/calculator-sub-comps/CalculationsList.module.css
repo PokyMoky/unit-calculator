@@ -1,0 +1,133 @@
+.calculationsListWrapper {
+    width: 100%;
+    background-color: #ebf0f6;
+}
+
+.calculationsList {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    font-family: "PT Root UI Bold", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.calculationsList li:last-child {
+    padding-bottom: 5px;
+}
+
+.listHeader,
+.listBody {
+    margin: 0 auto;
+    color: #6181B7;
+}
+
+.listHeader h4 {
+    margin-bottom: 15px;
+}
+
+.listHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listButton {
+    border: none;
+    background-color: transparent;
+    color: #6181B7;
+}
+
+.listBody {
+    line-height: 24px;
+}
+
+.listBody span {
+    color: #080E18;
+}
+
+@media (min-width: 768px) {
+
+    .calculationsList {
+        font-size: 21px;
+    }
+
+    .calculationsList li:last-child {
+        padding-bottom: 15px;
+    }
+
+    .listHeader,
+    .listBody {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .listHeader {
+        color: #5189DC;
+    }
+
+    .listButton {
+        color: #2870F7;
+        font-size: 18px;
+        display: flex;
+    }
+
+    .listButton span {
+        padding-left: 10px;
+    }
+
+    .listButton svg {
+        color: #2870F7;
+    }
+
+    .listBody {
+        padding: 3px 0;
+    }
+
+    .calculationsList li {
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .calculationsList {
+        width: calc(100% - 70px);
+
+    }
+
+    .listHeader h4 {
+        font-family: "Graphik LC Web Bold", sans-serif;
+        margin: 40px 0 18px;
+    }
+
+    .listBody {
+        font-size: 21px;
+        font-family: "Graphik LC Web Bold", sans-serif;
+    }
+
+    .socialLinks {
+        width: 100%;
+        max-width: 480px;
+        justify-content: flex-start;
+        gap: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .calculationsListWrapper {
+        color: #E0E9F6;
+    }
+
+    .contactFormContainer {
+        padding-top: 20px;
+    }
+
+    .listBody {
+        font-size: 24px;
+    }
+
+    .calculationsList li {
+        height: 150px;
+        border-bottom: 1px solid #fff;
+    }
+}

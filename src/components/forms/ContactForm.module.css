@@ -1,0 +1,247 @@
+.contactFormWrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    font-family: "PT Root UI", sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    color: #080E18;
+}
+
+.contactForm {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.contactForm p {
+    width: 90%;
+    margin: 0 0 15px;
+}
+
+.userData {
+    padding-top: 15px;
+}
+
+.contactForm textarea {
+    min-width: calc(100% - 22px);
+    max-width: calc(100% - 22px);
+    border: #BABABA solid 1px;
+    min-height: 28px;
+    max-height: 28px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.contactForm textarea:focus {
+    outline: 1px solid #4d4d4d;
+    border-color: #4d4d4d;
+}
+
+.contactLabel {
+    display: block;
+    color: #030303;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 7px;
+    white-space: nowrap;
+}
+
+.labelAndError {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.labelAndError .errorMsg {
+    font-size: 13px;
+    margin: 0;
+    color: #FB0732;
+    width: 170px;
+}
+
+.contactLabel span {
+    color: #FB0732;
+}
+
+.contactInputBlock {
+    margin-bottom: 15px;
+}
+
+.contactInputBlock:nth-child(2) {
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+
+.contactInputBlock input {
+    box-sizing: border-box;
+    padding: 14px;
+    width: 100%;
+}
+
+.contactInputBlock input:focus {
+    outline: 1px solid #4d4d4d;
+}
+
+.fileInput {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 15px;
+    padding: 18px;
+    box-shadow: 0 1px 14px 0 #00000021, 0 1px 2px 0 #0000001C;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 25px 0;
+}
+
+.fileInput span {
+    color: #808080;
+}
+
+.fileError {
+    color: #FB0732;
+    font-weight: 700;
+}
+
+.contactFormButtons {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.telegramButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    border: #FB0732 solid 1px;
+    color: #FB0732;
+    background-color: white;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.telegramButton:disabled {
+    border: #BABABA solid 1px;
+    background-color: #BABABA;
+}
+
+.agreement {
+    margin: 30px 15px 0 15px;
+    font-size: 15px;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+
+.agreement a {
+    text-decoration: underline;
+    color: #FB0732;
+}
+
+@media (min-width: 576px) {
+
+    .contactForm {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+
+    .userData {
+        padding-top: 7px;
+    }
+
+    .contactForm textarea {
+        min-height: 50px;
+        max-height: 50px;
+    }
+
+    .telegramButton {
+        width: 100%;
+        max-width: 716px;
+    }
+
+    .contactInputBlock {
+        margin-bottom: 35px;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .contactFormButtons {
+        flex-direction: row;
+        height: fit-content;
+        padding-top: 15px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contactFormButtons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contactFormButtons .redButton {
+        height: 53px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .userData {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    .contactInputBlock {
+        flex-grow: 1;
+        margin: 15px 0;
+    }
+
+    .contactForm textarea {
+        min-height: 80px;
+        max-height: 80px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .contactForm {
+        max-width: 638px;
+    }
+
+    .contactInputBlock {
+        margin-top: 22px;
+    }
+
+    .contactForm p {
+        margin: 10px 0;
+    }
+
+    .fileInput {
+        box-shadow: none;
+        border: #FB0732 1px solid;
+        font-family: "Graphik LC Web Bold", sans-serif;
+        color: #FB0732;
+        font-weight: 900;
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .fileInput img {
+        padding-right: 20px;
+    }
+
+    .agreement {
+        margin: 30px 35px 0 40px;
+    }
+}

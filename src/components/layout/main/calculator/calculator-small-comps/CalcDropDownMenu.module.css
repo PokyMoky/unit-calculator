@@ -1,0 +1,33 @@
+.optionsMenu {
+    margin: 0;
+    box-shadow: 0 1px 12px 0 #00000021, 0 1px 2px 0 #0000001C;
+}
+
+.option {
+    width: 100vw;
+    color: #A4AFBE;
+    font-family: "PT Root UI", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    text-align: left;
+    padding: 12px 15px;
+    display: flex;
+    background-color: white;
+}
+
+.option span {
+    padding-left: 20px;
+}
+
+.download {
+    color: #A4AFBE;
+}
+
+.rename {
+    height: 44px;
+}
+
+.delete {
+    color: #FB0732;
+}

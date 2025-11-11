@@ -1,0 +1,118 @@
+.about {
+    width: calc(100% - 30px);
+    margin: 50px auto 0;
+    font-family: "PT Root UI", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #080E18;
+}
+
+.aboutHeader {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 115%;
+    margin-top: 37px;
+    margin-bottom: 15px;
+}
+
+.aboutSubHeader {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "PT Root UI Bold", sans-serif;
+    margin: 13px 0;
+}
+
+.aboutList {
+    margin-left: 15px;
+}
+
+.aboutList li {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.aboutList li::marker {
+    content: url("../../../../public/images/Bullet.svg");
+}
+
+.aboutLink {
+    color: #FB0732;
+    text-decoration: none;
+}
+
+.aboutLink span {
+    color: #080E18;
+}
+
+.about h4 {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    line-height: 28px;
+}
+
+.about p {
+    margin: 13px 0 25px 0;
+}
+
+@media (min-width: 992px) {
+    .aboutHeader {
+        font-size: 34px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .about {
+        width: calc(100% - 70px);
+        padding-bottom: 100px;
+        margin-top: 0;
+    }
+
+    .aboutHeader {
+        margin-top: 20px;
+    }
+
+    .aboutSubHeader {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .questions {
+        background-image: url("/public/images/matemarketing-2022-04 1.png");
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: contain;
+    }
+
+    .questionsContent {
+        width: 50%;
+        max-width: 555px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about {
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 30px;
+        width: 1190px;
+        padding-bottom: 250px;
+    }
+
+    .about h4 {
+        font-size: 21px;
+        margin: 50px auto 20px;
+    }
+
+    .aboutHeader {
+        font-size: 42px;
+        margin: 10px auto 25px;
+    }
+
+    .questionsHeader {
+        margin-top: 68px;
+    }
+}

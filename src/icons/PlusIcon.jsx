@@ -1,0 +1,11 @@
+function PlusIcon(props) {
+   return (
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path fillRule="evenodd" clipRule="evenodd" d="M9 22V0H13V22H9Z" fill="white"/>
+         <path fillRule="evenodd" clipRule="evenodd" d="M0 9L22 9L22 13L4.76995e-08 13L0 9Z" fill="white"/>
+      </svg>
+
+   );
+}
+
+export default PlusIcon;

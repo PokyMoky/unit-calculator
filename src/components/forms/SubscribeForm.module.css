@@ -1,0 +1,97 @@
+.newsSignUp {
+    box-shadow: 0 1px 14px 0 #00000021, 0 1px 2px 0 #0000001C;
+    border-radius: 3px;
+    width: calc(100% - 30px);
+    margin: 0 auto 40px auto;
+}
+
+.newsSignUpContainer {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.newsSignUp label {
+    font-family: "PT Root UI Bold", sans-serif;
+    color: #080E18;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.newsSignUpInputBlock {
+    margin: 22px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.newsSignUpInputBlock input {
+    flex-grow: 1;
+    box-sizing: content-box;
+    border: #D4DFE2 solid 1px;
+    border-radius: 3px;
+    max-width: 426px;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #18100B;
+}
+
+.newsSignUpBtn {
+    width: 64px;
+    height: 53px;
+    background-color: #FB0732;
+    border: none;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.newsSignUpBtn:disabled {
+    background-color: #BABABA;
+}
+
+.newsSignUpBtn svg {
+    color: white;
+    transform: rotate(-90deg);
+    margin: 0;
+}
+
+.newsSignUpInputBlock .invalid {
+    outline: 1px solid #FB0732;
+    background-color: #ffebf0;
+}
+
+.newsSignUp .feedBackMsg {
+    color: #FB0732;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .newsSignUpContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+    }
+
+    .newsSignUpInputBlock {
+        flex: 1 1 500px;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .newsSignUp {
+        width: calc(100% - 70px);
+    }
+
+    .newsSignUpContainer {
+        width: calc(100% - 40px);
+        max-width: 1106px;
+    }
+}

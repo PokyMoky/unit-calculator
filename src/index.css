@@ -1,0 +1,50 @@
+a {
+    text-decoration: none;
+    color: #FB0732;
+}
+
+a>span {
+    color: #080E18;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+abbr {
+    font-family: "PT Root UI", helvetica, arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.1rem;
+    font-weight: 400;
+    color: #888;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    margin: 0;
+}
+
+footer {
+    font-family: "PT Root UI", helvetica, arial, sans-serif;
+    color: #262729;
+}
+
+input {
+    border: #BABABA solid 1px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: 1px solid #4d4d4d;
+}

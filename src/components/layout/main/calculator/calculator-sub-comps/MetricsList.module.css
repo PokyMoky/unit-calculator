@@ -1,0 +1,99 @@
+.calcMetrics {
+    width: calc(100% - 30px);
+    margin: 30px auto 25px auto;
+}
+
+.metricsHeader {
+    display: flex;
+    align-items: center;
+    color: #424242;
+}
+
+.metricsHeader h4 {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-size: 21px;
+    margin: 0 10px;
+}
+
+.metricsButton {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #5189DC;
+    border: none;
+    display: flex;
+}
+
+.metricsButton svg {
+    color: white;
+    position: relative;
+    align-self: center;
+    left: 2px;
+    margin: 0;
+}
+
+.metricsList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px 16px;
+    list-style: none;
+    padding: 20px 0;
+}
+
+.metricItem {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 24px;
+    color: #030303;
+}
+
+.metricTitle,
+.metricValue {
+    font-size: 18px;
+}
+
+.metricTitle {
+    font-family: "PT Root UI", sans-serif;
+    font-weight: 400;
+}
+
+.metricValue {
+    font-family: "PT Root UI Bold", sans-serif;
+    font-weight: 700;
+    text-align: right;
+    align-self: end;
+    white-space: nowrap;
+}
+
+@media (min-width: 830px) {
+    .metricsList {
+        width: 100%;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(9, auto);
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .calcMetrics {
+        width: calc(100% - 70px);
+    }
+
+    .metricsList {
+        padding-top: 20px;
+        gap: 10px 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .metricsList {
+        width: 1190px;
+        margin: 0 auto;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 13px 40px;
+    }
+}

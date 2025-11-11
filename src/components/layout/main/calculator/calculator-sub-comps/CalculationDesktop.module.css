@@ -1,0 +1,241 @@
+.form,
+.inputPart,
+.formula {
+    display: flex;
+    line-height: 110px;
+}
+
+.form {
+    width: calc(100% - 40px);
+    margin: 30px auto 60px auto;
+    font-family: "Graphik LC Web Bold", sans-serif;
+    flex-direction: column;
+}
+
+.form input:invalid {
+    outline: 1px solid #FB0732;
+    background-color: #ffebf0;
+}
+
+.inputPart {
+    justify-content: space-between;
+    align-items: start;
+    font-size: 24px;
+    color: #6181B7;
+}
+
+.inputPart>span {
+    margin: 0 6px;
+}
+
+.formElem {
+    font-family: "PT Root UI", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #030303;
+    display: flex;
+    flex-direction: column;
+    padding: 0 7px;
+}
+
+.au {
+    max-width: 210px;
+    min-width: 120px;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Root UI", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.au input {
+    max-width: 190px;
+}
+
+.au p {
+    margin: 10px 0 15px;
+}
+
+.pppu {
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.pppu .result {
+    font-size: 20px;
+}
+
+.label {
+    line-height: 1.75;
+    width: 100px;
+}
+
+.label p {
+    width: 100px;
+}
+
+.formula {
+    align-items: start;
+    justify-content: center;
+    margin: 0 2px;
+}
+
+.formulaInput {
+    max-width: 90px;
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 10px;
+    color: #080E18;
+    border: 1px solid #C4C8CB;
+    border-radius: 3px;
+}
+
+.pink {
+    flex-grow: 1;
+    background-color: #DA202B0D;
+    white-space: nowrap;
+}
+
+.pink .legend {
+    white-space: wrap;
+}
+
+.blue {
+    flex-grow: 1;
+    background-color: #E0E9F6;
+    margin-left: -2px;
+}
+
+.grey {
+    flex-grow: 1;
+    background-color: #4242420D;
+    align-self: stretch;
+}
+
+.transcript {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0 20px 0 25px ;
+    position: relative;
+    top: -10px;
+}
+
+.transcript p {
+    font-family: "PT Root UI", sans-serif;
+    color: #030303;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.grey>.transcript {
+    position: static;
+    margin-top: 8px;
+}
+
+.legend p:first-child {
+    padding-bottom: 4px;
+}
+
+.legend p:last-child {
+    width: 250px;
+}
+
+.transcript span {
+    font-weight: 700;
+}
+
+.result {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2870F7;
+    margin: 2px;
+}
+
+.result span {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-size: 24px;
+    color: #6181B7;
+    vertical-align: -2px;
+}
+
+.transcript .negative {
+    color: #DA202B;
+    font-weight: 700;
+}
+
+.transcript .positive {
+    color: #04a138;
+    font-weight: 700;
+}
+
+.transcript .neutral {
+    color: #030303;
+    font-weight: 700;
+}
+
+@media (min-width: 1100px) {
+    .form {
+        width: calc(100% - 70px);
+        margin: 30px auto 60px auto;
+    }
+
+    .inputsPppu {
+        display: flex;
+    }
+
+    .inputPart {
+        max-width: 1020px;
+        flex-grow: 1;
+    }
+
+    .pppu {
+        margin-top: 0;
+    }
+
+    .pppu p {
+        margin-top: 12px;
+    }
+
+    .pppu .result {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .form {
+        width: 1190px;
+        margin: 30px auto 45px auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formulaInput {
+        max-width: 80px;
+    }
+
+    .au {
+        line-height: 1.75;
+        order: 2;
+        min-width: 140px;
+    }
+
+    .au p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .pppu {
+        flex-shrink: 0;
+        min-width: 150px;
+        max-width: 200px;
+    }
+}

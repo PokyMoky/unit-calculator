@@ -1,0 +1,208 @@
+.header {
+    width: 100%;
+    background-color: #d6d4e5;
+    position: relative;
+}
+
+.logo {
+    max-width: 136px;
+    display: grid;
+    place-items: center;
+}
+
+.inner {
+    display: grid;
+    place-items: center;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.containerHeader {
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burgerDiv {
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+    display: grid;
+}
+
+.burgerButton {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 17px;
+    background: transparent;
+    border: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burgerButton span {
+    display: block;
+    width: 90%;
+    height: 3px;
+    background-color: #FB0732;
+    transition: all 0.3s ease;
+}
+
+.burgerButton span:nth-child(2) {
+    transform: translate(-2px);
+}
+
+.burgerButton span:nth-child(3) {
+    transform: translate(-4px);
+}
+
+.burgerButton.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.burgerButton.open span:nth-child(2) {
+    opacity: 0;
+}
+.burgerButton.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.rightMenu {
+    display: flex;
+}
+
+.phoneDesktop {
+    display: none;
+}
+
+.servicesDesktop {
+    display: none;
+}
+
+.lang {
+    display: none;
+}
+
+.phoneMobile,
+.searchButton {
+    background-color: transparent;
+    border: none;
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+}
+
+.searchWindow {
+    font-family: "PT Root UI", sans-serif;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    padding: 10px;
+    background-color: #d5d3e4;
+    border-radius: 3px;
+    box-shadow: -11px 1px 7px 4px #0000001A;
+
+    display: flex;
+    gap: 16px;
+}
+
+.searchWindow input {
+    border: #BABABA solid 1px;
+    padding: 7px;
+    font-size: 18px;
+}
+
+.searchWindow button {
+    border: #FB0732 1px solid;
+    background-color: white;
+    border-radius: 3px;
+    color: #FB0732;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+@media (max-width: 354px) {
+    .searchButton {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .containerHeader,
+    .heroContainer {
+        max-width: 1296px;
+    }
+
+    .burgerButton {
+        display: none;
+    }
+
+    .burgerDiv {
+        display: none;
+    }
+
+    .header {
+        background-color: #fff;
+        color: #080E18;
+        font-family: "Graphik LC Web Bold", sans-serif;
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .containerHeader {
+        background-position-x: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .rightMenu {
+        order: 5;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    .logo {
+        max-width: 200px;
+        order: 2;
+    }
+
+    .phoneMobile {
+        display: none;
+    }
+
+    .phoneDesktop,
+    .servicesDesktop,
+    .lang {
+        display: block;
+        text-decoration: none;
+        color: #080E18;
+    }
+
+    .searchButton {
+        margin-left: 0;
+    }
+
+    .servicesDesktop {
+        display: block;
+    }
+
+    .lang {
+        display: block;
+        border: none;
+        background-color: transparent;
+    }
+}

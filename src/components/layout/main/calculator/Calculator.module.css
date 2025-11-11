@@ -1,0 +1,142 @@
+.calculator {
+    background-color: #fff;
+    width: 100%;
+    font-family: "PT Root UI", sans-serif;
+}
+
+.listsControlBtns {
+    background-color: #F2F6F7;
+    padding: 16px 0;
+}
+
+.btnsContainer {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.hideButton,
+.newCalcButton {
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 16px 0;
+}
+
+.hideButton {
+    font-family: "PT Root UI Bold", sans-serif;
+    background-color: transparent;
+    color: #2870F7;
+    padding: 0;
+}
+
+.hideButton[disabled] {
+    color: #c0bfbf;
+}
+
+.newCalcButton {
+    font-family: "Graphik LC Web Bold", sans-serif;
+    max-width: 175px;
+    border-radius: 3px;
+    background-color: #5189DC;
+    color: white;
+    flex-grow: 1;
+}
+
+.dnldXSLButton {
+    width: calc(100% - 30px);
+    display: block;
+    margin: 0 auto;
+    font-family: "Graphik LC Web Bold", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    padding: 16px 0;
+    border-radius: 3px;
+}
+
+.dnldXSLButton {
+    background-color: #5189DC;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .dnldXSLButton {
+        height: 55px;
+    }
+}
+
+@media (min-width: 768px) {
+    .btnsContainer {
+        width: calc(100% - 40px);
+    }
+
+    .listsControlBtns {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .dnldXSLButton {
+        background-image: url("/public/images/download_white.svg");
+        background-repeat: no-repeat;
+        background-position: -3px -3px;
+        padding-left: 15px;
+        width: 169px;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headerButtons {
+        display: flex;
+        align-items: center;
+    }
+
+    .headerButtons button {
+        width: 60px;
+        height: 60px;
+        color: #A4AFBE;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .calculator {
+        position: relative;
+        top: -68px;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.11);
+    }
+
+    .btnsContainer {
+        width: calc(100% - 70px);
+    }
+
+    .listsControlBtns {
+        padding: 28px 0;
+    }
+
+    .newCalcButton {
+        width: 208px;
+        max-width: 208px;
+        background-image: url("/public/images/plus.svg");
+        background-repeat: no-repeat;
+        background-position: 15px 16px;
+        padding: 17px 5px 17px 30px;
+    }
+}
+
+@media (min-width: 1296px) {
+    .calculator {
+        width: 1296px;
+        margin: 0 auto;
+    }
+
+    .listsControlBtns {
+        padding: 38px 0;
+    }
+}

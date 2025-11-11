@@ -1,0 +1,86 @@
+.calculatorHeader {
+    background-color: #E0E9F6;
+    margin: 0;
+}
+
+.headerContainer {
+    width: calc(100% - 30px);
+    margin: 0 auto;
+}
+
+.headerDesktop {
+    display: none;
+}
+
+.headerMobile {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerContainer h4, .editHeaderInput {
+    font-family: "PT Root UI Bold", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #6181B7;
+    margin: 0;
+}
+
+.editHeaderInput {
+    padding: 5px;
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+}
+
+.editHeaderInput:focus-visible {
+    border: #C4C8CB 1px solid;
+    outline: none;
+}
+
+.options {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+@media (min-width: 1024px) {
+    .headerMobile {
+        display: none;
+    }
+
+    .headerDesktop {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .headerInput {
+        font-family: "Graphik LC Web Bold", sans-serif;
+        font-weight: 700;
+        border: #C4C8CB 1px solid;
+        border-radius: 3px;
+        color: #5189DC;
+        font-size: 28px;
+        line-height: 36px;
+        padding: 7px 12px;
+        margin: 10px 0;
+        width: 100%;
+        max-width: 980px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .headerDesktop {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1296px) {
+    .headerInput {
+        margin: 10px 0 10px 15px;
+    }
+}
