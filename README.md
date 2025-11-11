@@ -47,4 +47,4 @@ If you are developing a production application, we recommend using TypeScript wi
 "мои" формулы можно легко заменить на нужные в данном файле
 
 ## Ссылки
-Т.к. в ТЗ была только одна страница, я не стала подключать react-router, поэтому ссылки реализованы как <a>, а не <Link>
+Т.к. в ТЗ была только одна страница, я не стала подключать react-router, поэтому ссылки реализованы как anchor, а не Link
